@@ -25,7 +25,7 @@ public class User_001_Register {
 		basePage = new BasePage();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://demo.nopcommerce.com/");
-		email = "testEmail" + ranDom() + "@gmail.com";
+		email = "testEmail" + randomNumber() + "@gmail.com";
 
 	}
 
@@ -49,6 +49,7 @@ public class User_001_Register {
 
 	@Test
 	public void TC_002_Invalid_Email() {
+		basePage.waitForElementClickAble(driver, "//a[@class='ico-register']");
 		basePage.clickToElement(driver, "//a[@class='ico-register']");
 
 		basePage.waitForElementVisible(driver, "//input[@id='Email']");
@@ -67,6 +68,7 @@ public class User_001_Register {
 
 	@Test
 	public void TC_003_Register_Success() {
+		basePage.waitForElementClickAble(driver, "//a[@class='ico-register']");
 		basePage.clickToElement(driver, "//a[@class='ico-register']");
 
 		basePage.waitForElementVisible(driver, "//input[@id='Email']");
@@ -147,7 +149,7 @@ public class User_001_Register {
 		driver.quit();
 	}
 
-	public int ranDom() {
+	public int randomNumber() {
 		Random rand = new Random();
 		return rand.nextInt(9999);
 	}
