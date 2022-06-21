@@ -15,7 +15,7 @@ public class BaseTest {
 			System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver-1");
 			driverBaseTest = new FirefoxDriver();
 		} else if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver-5");
+			System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver-7");
 			driverBaseTest = new ChromeDriver();
 		} else {
 			throw new RuntimeException("browserName invalid");

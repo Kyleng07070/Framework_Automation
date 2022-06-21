@@ -4,14 +4,14 @@
   <test name="Run on Firefox">
 	<parameter name = "browser" value = "firefox"/>
     <classes>
-      <class name="com.nopcommerce.user.User_003_Login_PageObject"/>
+      <class name="com.nopcommerce.user.User_004_Login_PageObject_Multiple_browsers"/>
     </classes>
   </test> <!-- Test -->
 
   <test name="Run on Chrome">
 	<parameter name = "browser" value = "chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.User_003_Login_PageObject"/>
+      <class name="com.nopcommerce.user.User_004_Login_PageObject_Multiple_browsers"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
