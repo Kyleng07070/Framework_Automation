@@ -15,7 +15,4 @@ public class RegisterPageUI {
 	public static final String REGISTER_SUCCESS_MESSAGE = "//div[@class='result']";
 	public static final String EXISTING_EMAIL_ERROR_MESSAGE = "//div[contains(@class, 'message-error')]//li";
 	public static final String LOGOUT_LINK = "//a[text()='Log out']";
-	
-
-
 }

@@ -143,11 +143,11 @@ public class BasePage {
 		return getWebElement(driver, xpathLocator).getAttribute(cssName);
 	}
 
-	protected int getHexaColorFromRGBA(WebDriver driver, String xpathLocator) {
+	protected int getElementSize(WebDriver driver, String xpathLocator) {
 		return getListOfWebElements(driver, xpathLocator).size();
 	}
 
-	protected String getElementSize(String rgbaValue) {
+	protected String getHexaColorFromRGBA(String rgbaValue) {
 		return Color.fromString(rgbaValue).asHex();
 	}
 
